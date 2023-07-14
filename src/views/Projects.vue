@@ -7,33 +7,12 @@ import Fade from "../components/Fade.vue";
 
 const projects = [
     {
-        name: "製作個人網站？",
-        description: "This is a project description. " + random_text(64),
+        name: "製作個人網站",
+        description: "人生好難...",
         image: "https://picsum.photos/640/320",
-        link: "https://github.com",
+        link: "https://github.com/kun1024144/Website",
         tags: ["tag1", "tag2", "tag3"],
-    },
-    {
-        name: "寫出 AI？",
-        description: "This is a project description. " + random_text(64),
-        image: "https://picsum.photos/640/320",
-        link: "https://github.com",
-        tags: ["tag1", "tag2", "tag3"],
-    },
-    {
-        name: "學會 Linux？",
-        description: "This is a project description. " + random_text(64),
-        image: "https://picsum.photos/640/320",
-        link: "https://github.com",
-        tags: ["tag1", "tag2", "tag3"],
-    },
-    {
-        name: "做出桌布？",
-        description: "This is a project description. " + random_text(64),
-        image: "https://picsum.photos/640/320",
-        link: "https://github.com",
-        tags: ["tag1", "tag2", "tag3"],
-    },
+    }
 ];
 
 const step = ref(0);
@@ -58,8 +37,11 @@ watch(step, () => {
             text="My Projects"
             class="block text-2xl sm:text-3xl lg:text-4xl"
         />
-        <div class="py-2">
+        <div class="py-2 bg-slate-200 text-cyan-300" >
             <div v-for="(project, index) in projects">
+                <button class="bg-blue-500 hover:bg-blue-700 lg:bg-green-500 lg:hover:bg-green-700">
+                    button test
+                </button>
                 <Fade>
                     <Project
                         v-if="step >= index + 1"
