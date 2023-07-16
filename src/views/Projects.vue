@@ -9,8 +9,8 @@ const projects = [
     {
         name: "製作個人網站",
         description: "人生好難...",
-        image: "https://picsum.photos/640/320",
-        link: "https://github.com/kun1024144/Website",
+        image: "/img/sobad.jpg",
+        link: "https://youtu.be/dQw4w9WgXcQ",
         tags: ["tag1", "tag2", "tag3"],
     }
 ];
